@@ -5,16 +5,18 @@ import argparse
 
 from xml.etree import ElementTree as ET
 
-# create a class that reads any xml format
+# create a class that opens and reads any xml format
 # pwx
 # gpx
 # etc
+
 
 def pwx_reader(a_file):
     '''docstring'''
     tree = ET.parse(a_file)
     root = tree.getroot()
     print root
+
 
 def main():
     '''docstring'''
@@ -26,6 +28,7 @@ def main():
     args = parser.parse_args()
 
     print args
+    pwx_reader(args['file'])
 
 if __name__ == '__main__':
     main()
