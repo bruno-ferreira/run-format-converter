@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-''' docstring '''
+"""docstring"""
 
 import argparse
 import os
@@ -12,15 +12,15 @@ from xml.etree import ElementTree as ET
 # json
 
 
-class openXMLFile(object):
-    '''docstring'''
-    def open():
+class OpenXMLFile(object):
+    """docstring"""
+    def open(self):
         tree = ET.parse(self)
         root = tree.getroot()
 
 
 def pwx_reader(a_file):
-    '''docstring'''
+    """docstring"""
     a_file = os.path.abspath(a_file)
     tree = ET.parse(a_file)
     root = tree.getroot()
