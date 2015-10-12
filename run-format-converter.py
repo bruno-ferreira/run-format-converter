@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 """docstring"""
 
-import argparse
 import os
 from xml.etree import ElementTree as ET
+
+import argparse
+
 
 # create a class that opens and reads any xml format
 # pwx
@@ -44,7 +46,7 @@ def pwx_reader(a_file):
 
 
 def main():
-    '''docstring'''
+    """docstring"""
     # Not sure if this is really needed. TODO: check it
 
 if __name__ == '__main__':
